@@ -76,3 +76,21 @@ p{
     color: #fff;
     padding: 20px;
 }
+
+.resultado{
+    background-color: #2d435c;
+    color: #f0f0f0;
+}
+
+.resultado:hover{
+    color: #2d435c;
+}
+
+.operadores{
+    background-color: #2f345a;
+    color: #7aacee;
+}
+
+.operadores:hover{
+    color: #2f345a;
+}
