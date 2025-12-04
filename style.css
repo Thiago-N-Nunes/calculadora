@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;/*Diz que o body tem altura de 100% da tela*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;/*Define a colocação dos elementos como colunas*/
+    align-items: center;
+    background-color: #2d4f5c;
+}
+
+h1{
+    color: #fff;
+}
+
+.calculadora{
+    background-color: #fff;
+    width: 300px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#display{
+    padding: 5px;
+    box-sizing: border-box;/*Considera as margens e os paddings pra calcular a largura do elemento*/
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    text-align: right;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.box-buttons{
+    display: grid;/*Define a colocação dos elementos com grade*/
+    grid-template-columns:1fr 1fr 1fr 1fr;/*define a quantidade de colunas que vão ter no espaço definido*/
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;/*Define a quantidade de linhas que vão ter no espaço definido*/
+    gap: 10px;
+}
+
+button{
+    border: none;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 30px;
+    color: #4b658c;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+#zero{
+    grid-column: 1/3;/*Define a posição do item nas colunas*/
+}
+
+#resultado{
+    grid-row: 4/6;
+    height: 100%;
+    grid-column: 4;
+}
